@@ -702,11 +702,14 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="sayButtonClicked:" target="XfG-lQ-9wD" id="MI2-ya-qcR"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfi-RZ-wXe">
                                 <rect key="frame" x="18" y="158" width="444" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="2SX-CJ-63O">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="2SX-CJ-63O">
                                     <font key="font" metaFont="system" size="30"/>
                                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -714,6 +717,10 @@
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="vfi-RZ-wXe" id="gcz-hj-gBJ"/>
+                        <outlet property="nameField" destination="dMo-Mu-m5R" id="uf1-Yb-U9f"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
